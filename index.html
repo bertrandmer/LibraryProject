@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+  </head>
+  <body>
+    <main
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <div>
+      <form>
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title"><br>
+      <label for="author">Author:</label><br>
+      <input type="type" id="author" name="author"><br>
+      <label for="read">Read:</label><br>
+      <input type="checkbox" id="read" name="read"><br>
+      <input type="submit" value="Submit">
+      </form>
+        <h1>Library Project</h1>
+        <div id="library">
+          <!-- Add table here -->
+          <table id="table" style="min-width: 680px; margin: 2rem">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Read</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td>Mastery</td>
+                <td>Robert Greene</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="read"
+                    id="readLibraryCheckbox"
+                    checked
+                    disabled
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button id="addButton">Add Book</button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
